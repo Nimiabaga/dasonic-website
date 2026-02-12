@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+}
+
+a {
+  @apply underline-offset-4;
+}
+
+.container-padded {
+  @apply mx-auto w-full max-w-6xl px-5;
+}
