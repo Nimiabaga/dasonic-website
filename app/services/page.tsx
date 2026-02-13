@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { PageShell } from '@/components/page-shell';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Services',
@@ -36,7 +37,13 @@ export default function ServicesPage() {
   return (
     <>
       <section className="relative h-80 overflow-hidden md:h-96">
-        <img src="/profile-page-016.png" alt="Services" className="h-full w-full object-cover" />
+        <Image
+          src="/profile-page-016.png"
+          alt="Services"
+          className="h-full w-full object-cover"
+          width={1920}
+          height={1080}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--dark-blue)] via-[color:var(--dark-blue)]/60 to-transparent" />
         <div className="absolute inset-0 flex items-center">
           <div className="container-padded">
@@ -51,41 +58,41 @@ export default function ServicesPage() {
         title="Integrated engineering excellence"
         subtitle="End-to-end engineering, infrastructure, and operational support built for safety, quality, and efficiency."
       >
-      <div className="grid gap-6 md:grid-cols-3">
-        {services.map((s) => (
-          <div key={s.name} className="group rounded-2xl border border-[color:var(--line)] bg-white p-8 shadow-sm transition hover:shadow-xl hover:border-[color:var(--sea)]">
-            <div className="accent-bar h-1.5 w-12 rounded-full mb-6" />
-            <p className="text-lg font-bold">{s.name}</p>
-            <p className="mt-4 text-base text-[color:var(--muted)] leading-relaxed">{s.desc}</p>
-          </div>
-        ))}
-      </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          {services.map((s) => (
+            <div key={s.name} className="group rounded-2xl border border-[color:var(--line)] bg-white p-8 shadow-sm transition hover:shadow-xl hover:border-[color:var(--sea)]">
+              <div className="accent-bar h-1.5 w-12 rounded-full mb-6" />
+              <p className="text-lg font-bold">{s.name}</p>
+              <p className="mt-4 text-base text-[color:var(--muted)] leading-relaxed">{s.desc}</p>
+            </div>
+          ))}
+        </div>
 
-      <div className="mt-12 grid gap-8 md:grid-cols-2">
-        <div className="rounded-2xl border border-[color:var(--line)] bg-white p-8 shadow-sm">
-          <div className="accent-bar h-1.5 w-16 rounded-full mb-6" />
-          <p className="text-xl font-bold">Delivery standards</p>
-          <p className="mt-4 text-base text-[color:var(--muted)] leading-relaxed">
-            We execute every project with documented processes, safety compliance, and quality control checks. Our
-            teams combine local expertise with global best practices to deliver reliable results.
-          </p>
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
+          <div className="rounded-2xl border border-[color:var(--line)] bg-white p-8 shadow-sm">
+            <div className="accent-bar h-1.5 w-16 rounded-full mb-6" />
+            <p className="text-xl font-bold">Delivery standards</p>
+            <p className="mt-4 text-base text-[color:var(--muted)] leading-relaxed">
+              We execute every project with documented processes, safety compliance, and quality control checks. Our
+              teams combine local expertise with global best practices to deliver reliable results.
+            </p>
+          </div>
+          <div className="rounded-2xl bg-gradient-to-br from-[color:var(--dark-blue)] to-[color:var(--navy)] p-8 text-white shadow-xl">
+            <div className="bg-white/20 h-1.5 w-16 rounded-full mb-6" />
+            <p className="text-xl font-bold">Ready to scope a project?</p>
+            <p className="mt-4 text-base text-white/90 leading-relaxed">
+              Share your brief and we will provide a clear plan, timeline, and delivery approach aligned to your
+              requirements.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-6 inline-block rounded-full bg-white px-8 py-3 text-base font-semibold text-[color:var(--dark-blue)] no-underline transition hover:bg-white/90"
+            >
+              Contact the team
+            </Link>
+          </div>
         </div>
-        <div className="rounded-2xl bg-gradient-to-br from-[color:var(--dark-blue)] to-[color:var(--navy)] p-8 text-white shadow-xl">
-          <div className="bg-white/20 h-1.5 w-16 rounded-full mb-6" />
-          <p className="text-xl font-bold">Ready to scope a project?</p>
-          <p className="mt-4 text-base text-white/90 leading-relaxed">
-            Share your brief and we will provide a clear plan, timeline, and delivery approach aligned to your
-            requirements.
-          </p>
-          <Link
-            href="/contact"
-            className="mt-6 inline-block rounded-full bg-white px-8 py-3 text-base font-semibold text-[color:var(--dark-blue)] no-underline transition hover:bg-white/90"
-          >
-            Contact the team
-          </Link>
-        </div>
-      </div>
-    </PageShell>
+      </PageShell>
     </>
   );
 }

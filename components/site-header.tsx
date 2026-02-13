@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 const nav = [
@@ -21,7 +22,7 @@ export function SiteHeader() {
       <div className="container-padded flex h-16 md:h-20 lg:h-24 items-center justify-between">
         <Link href="/" className="no-underline shrink-0">
           <div className="flex flex-col items-center min-w-max">
-            <img src="/logo.png" alt="Dasonic and Company" className="h-8 md:h-10 lg:h-14 w-auto mb-0" />
+            <Image src="/logo.png" alt="Dasonic and Company" width={100} height={56} className="h-8 md:h-10 lg:h-14 w-auto mb-0" priority />
             <div className="flex flex-col items-center leading-tight whitespace-nowrap -mt-1 md:-mt-2">
               <span className="text-xs md:text-sm lg:text-base font-bold tracking-normal text-[#003780] uppercase font-serif">
                 Dasonic And Company

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Section } from '@/components/section';
 import { HeroCarousel } from '@/components/hero-carousel';
 
@@ -119,10 +120,10 @@ export default function HomePage() {
             </div>
             <div className="space-y-4 md:space-y-5 max-w-full md:max-w-lg lg:max-w-md mx-auto lg:mx-0">
               <div className="rounded-xl overflow-hidden shadow-md border border-gray-200 bg-white p-2.5 md:p-3">
-                <img src="/impact-1.jpg" alt="Dasonic project impact" className="w-full rounded-lg object-contain" />
+                <Image src="/impact-1.jpg" alt="Dasonic project impact" className="w-full rounded-lg object-contain" width={800} height={600} />
               </div>
               <div className="rounded-xl overflow-hidden shadow-md border border-gray-200 bg-white p-2.5 md:p-3">
-                <img src="/impact-2.jpg" alt="Dasonic infrastructure work" className="w-full rounded-lg object-contain" />
+                <Image src="/impact-2.jpg" alt="Dasonic infrastructure work" className="w-full rounded-lg object-contain" width={800} height={600} />
               </div>
             </div>
           </div>

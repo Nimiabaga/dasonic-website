@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const slides = [
   {
@@ -53,10 +54,12 @@ export function HeroCarousel() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <img
+          <Image
             src={slide.image}
             alt={slide.title}
-            className="h-full w-full object-cover"
+            fill
+            className="object-cover"
+            priority={index === 0}
           />
         </div>
       ))}

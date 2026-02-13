@@ -1,4 +1,5 @@
 import { PageShell } from '@/components/page-shell';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'About',
@@ -8,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="relative h-80 overflow-hidden md:h-96">
-        <img src="/profile-page-033.png" alt="Leadership" className="h-full w-full object-cover" />
+        <Image src="/profile-page-033.png" alt="Leadership" className="h-full w-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--dark-blue)] via-[color:var(--dark-blue)]/60 to-transparent" />
         <div className="absolute inset-0 flex items-center">
           <div className="container-padded">
