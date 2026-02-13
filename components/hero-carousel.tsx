@@ -64,33 +64,29 @@ export function HeroCarousel() {
         </div>
       ))}
 
-      {/* Content Overlay with Circle */}
-      <div className="absolute inset-0 flex items-center justify-center lg:justify-end">
-        <div className="container-padded relative w-full">
-          <div className="relative flex justify-center lg:justify-end lg:mr-20 xl:mr-32">
-            {/* Circular Overlay with Text Inside */}
-            <div 
-              className="relative w-[85vw] max-w-[450px] h-[85vw] max-h-[450px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] rounded-full bg-[#ff3131]/80 backdrop-blur-sm flex items-center justify-center p-6 md:p-10 lg:p-14"
-            >
-              <div className="text-center max-w-full">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight">
-                  {slides[currentSlide].title}
-                </h1>
-                <p className="mt-3 md:mt-4 lg:mt-5 text-sm md:text-base lg:text-lg text-white/95 leading-relaxed">
-                  {slides[currentSlide].description}
-                </p>
-                <div className="mt-4 md:mt-6 flex flex-col sm:flex-row justify-center gap-3">
-                  <Link
-                    href="/about"
-                    className="rounded-full bg-white px-5 md:px-6 lg:px-8 py-2.5 md:py-3 lg:py-3.5 text-xs md:text-sm lg:text-base font-semibold text-[#003780] no-underline transition hover:bg-white/90 shadow-lg inline-flex items-center justify-center gap-2"
-                  >
-                    Discover more about Dasonic
-                    <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
+      {/* Blue Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#003780]/90 via-[#003780]/60 to-transparent" />
+
+      {/* Content */}
+      <div className="absolute inset-0 flex items-end md:items-center">
+        <div className="container-padded w-full pb-16 md:pb-0">
+          <div className="max-w-4xl">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
+              {slides[currentSlide].title}
+            </h1>
+            <p className="mt-4 md:mt-6 text-base md:text-lg lg:text-xl text-white/95 leading-relaxed max-w-2xl">
+              {slides[currentSlide].description}
+            </p>
+            <div className="mt-6 md:mt-8">
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 md:px-8 py-3 md:py-4 text-sm md:text-base font-semibold text-[#003780] no-underline transition hover:bg-[#ff3131] hover:text-white shadow-lg"
+              >
+                Discover more about Dasonic
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
