@@ -4,6 +4,18 @@
 
 :root {
   color-scheme: light;
+  --ink: #0a1628;
+  --muted: #64748b;
+  --sand: #ffffff;
+  --cloud: #f8fafc;
+  --copper: #0369a1;
+  --sea: #003780;
+  --line: #e2e8f0;
+  --panel: #ffffff;
+  --dark-blue: #003780;
+  --accent-blue: #003780;
+  --navy: #002855;
+  --brand-red: #ff3131;
 }
 
 html,
@@ -12,7 +24,20 @@ body {
 }
 
 body {
-  @apply bg-white text-slate-900 antialiased;
+  @apply antialiased;
+  background: var(--cloud);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 a {
@@ -20,5 +45,59 @@ a {
 }
 
 .container-padded {
-  @apply mx-auto w-full max-w-6xl px-5;
+  @apply mx-auto w-full max-w-7xl px-6 lg:px-8;
+}
+
+.hero-surface {
+  background: linear-gradient(135deg, #003780 0%, #0052b4 50%, #0a1628 100%);
+}
+
+.frost-panel {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 60px rgba(10, 22, 40, 0.12);
+  backdrop-filter: blur(20px);
+}
+
+.accent-bar {
+  background: linear-gradient(90deg, #003780, #0052b4);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-soft {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.7s ease 0.15s both;
+}
+
+.animate-fade-up-late {
+  animation: fade-up 0.7s ease 0.3s both;
+}
+
+.animate-float-soft {
+  animation: float-soft 8s ease-in-out infinite;
 }
