@@ -95,19 +95,19 @@ export function HeroCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white p-3 md:p-4 rounded-full shadow-lg transition"
+        className="absolute left-4 md:left-8 top-32 md:top-1/2 md:-translate-y-1/2 z-20 bg-white/90 hover:bg-white p-2 md:p-4 rounded-full shadow-lg transition"
         aria-label="Previous slide"
       >
-        <svg className="w-6 h-6 text-[#003780]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 md:w-6 md:h-6 text-[#003780]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white p-3 md:p-4 rounded-full shadow-lg transition"
+        className="absolute right-4 md:right-8 top-32 md:top-1/2 md:-translate-y-1/2 z-20 bg-white/90 hover:bg-white p-2 md:p-4 rounded-full shadow-lg transition"
         aria-label="Next slide"
       >
-        <svg className="w-6 h-6 text-[#003780]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 md:w-6 md:h-6 text-[#003780]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
