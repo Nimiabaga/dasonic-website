@@ -7,9 +7,9 @@ export function PageShell({ title, subtitle, children }: { title: string; subtit
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#003780]">
           <span className="text-2xl font-black">D</span>asonic
         </p>
-        <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">{title}</h1>
+        <h1 className="brand-title mt-4 text-4xl md:text-5xl">{title}</h1>
         {subtitle ? (
-          <p className="mt-6 text-lg text-[color:var(--muted)] md:text-xl leading-relaxed">{subtitle}</p>
+          <p className="brand-lead mt-6 text-lg md:text-xl">{subtitle}</p>
         ) : null}
       </div>
       <div className="mt-12">{children}</div>

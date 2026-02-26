@@ -34,10 +34,23 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: var(--font-display);
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
+  color: var(--sea);
+}
+
+p,
+li,
+a,
+span,
+button,
+input,
+textarea {
+  font-family: var(--font-body);
 }
 
 a {
@@ -61,6 +74,29 @@ a {
 
 .accent-bar {
   background: linear-gradient(90deg, #003780, #0052b4);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--sea);
+}
+
+.brand-lead {
+  font-family: var(--font-body);
+  color: var(--sea);
+  line-height: 1.5;
 }
 
 @keyframes fade-up {

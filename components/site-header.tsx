@@ -24,10 +24,10 @@ export function SiteHeader() {
           <div className="flex flex-col items-center min-w-max">
             <Image src="/logo.png" alt="Dasonic and Company" width={100} height={56} className="h-8 md:h-10 lg:h-14 w-auto mb-0" priority />
             <div className="flex flex-col items-center leading-tight whitespace-nowrap -mt-1 md:-mt-2">
-              <span className="text-xs md:text-sm lg:text-base font-bold tracking-normal text-[#003780] uppercase font-serif">
+              <span className="font-display text-xs md:text-sm lg:text-base font-bold tracking-normal text-[#003780] uppercase">
                 Dasonic And Company
               </span>
-              <span className="text-[10px] md:text-xs tracking-wide text-[#003780] font-medium font-serif">(Nigeria) Ltd</span>
+              <span className="font-display text-[10px] md:text-xs tracking-wide text-[#003780] font-medium">(Nigeria) Ltd</span>
             </div>
           </div>
         </Link>

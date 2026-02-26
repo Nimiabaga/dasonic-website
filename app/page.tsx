@@ -107,10 +107,10 @@ export default function HomePage() {
             <div className="inline-block rounded-full bg-[#ff3131] px-4 md:px-5 py-2 mb-4 md:mb-6">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-white">WELCOME</p>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#003780] leading-tight uppercase tracking-[0.02em]">
+            <h1 className="brand-title text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               Dasonic and Company <span className="whitespace-nowrap">(Nigeria) Ltd</span>
             </h1>
-            <p className="mt-4 md:mt-6 text-sm md:text-base lg:text-lg text-[#003780] leading-relaxed max-w-4xl">
+            <p className="brand-lead mt-4 md:mt-6 text-sm md:text-base lg:text-lg max-w-4xl">
               We deliver trusted engineering, infrastructure, and project execution services with a strong focus on safety,
               quality, and long-term value for clients across Nigeria.
             </p>
