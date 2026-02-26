@@ -1,32 +1,69 @@
+import Link from 'next/link';
+
+const exploreLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About Us' },
+  { href: '/services', label: 'Services' },
+  { href: '/projects', label: 'Our Projects' },
+  { href: '/contact', label: 'Contact' },
+];
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-[color:var(--line)] bg-[color:var(--dark-blue)] text-white">
-      <div className="container-padded py-16">
-        <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
+      <div className="container-padded py-14 md:py-16">
+        <div className="grid gap-10 lg:grid-cols-[1.25fr_0.8fr_1.25fr] lg:gap-12">
           <div>
-            <p className="text-2xl font-bold text-white">
-              <span className="text-4xl font-black">D</span>asonic and Company Nigeria Ltd
-            </p>
-            <p className="mt-4 text-base text-white/80 leading-relaxed max-w-sm">
-              Engineering excellence to improve lives sustainably. Delivering world-class solutions across Nigeria 
-              since 1997.
+            <p className="font-display text-2xl font-bold uppercase tracking-[0.02em] text-white md:text-3xl">Dasonic and Company (Nigeria) Ltd</p>
+            <p className="mt-5 max-w-md text-base leading-relaxed text-white/85">
+              We specialize in engineering, infrastructure, facility maintenance, procurement, and project execution
+              services with strong safety, quality, and compliance standards.
             </p>
           </div>
-          <div className="text-sm text-white/80">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-white mb-4">Head office</p>
-            <p className="leading-relaxed">33, Mission Road, Bonny,<br />Rivers State, Nigeria.</p>
+
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white">Explore</p>
+            <ul className="mt-5 space-y-3">
+              {exploreLinks.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-base text-white/85 no-underline transition hover:text-white">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="text-sm text-white/80">
-            <p className="text-xs font-bold uppercase tracking-[0.25em] text-white mb-4">Contact</p>
-            <p className="mt-2">+234 803 733 7547</p>
-            <p className="mt-2">dasonicandcoy@yahoo.com</p>
-            <p className="mt-2">www.dasonicandcompany.com</p>
+
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white">Newsletter</p>
+            <div className="mt-5 rounded-2xl bg-[color:var(--sea)] p-6">
+              <p className="text-base leading-relaxed text-white/90">Subscribe to receive our latest project updates and insights.</p>
+              <form className="mt-5 flex flex-col gap-3 sm:flex-row" action="#" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Email address"
+                  className="h-12 flex-1 rounded-md border border-transparent px-4 text-sm text-[color:var(--ink)] outline-none ring-0"
+                />
+                <button
+                  type="submit"
+                  className="h-12 rounded-md bg-white px-6 text-sm font-semibold uppercase tracking-[0.08em] text-[color:var(--sea)] transition hover:bg-white/90"
+                >
+                  Register
+                </button>
+              </form>
+            </div>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
-          <span>Committed to safety, sustainability, and local content development.</span>
-          <span>© {new Date().getFullYear()} Dasonic and Company Nigeria Ltd. All rights reserved.</span>
+        <div className="mt-12 grid gap-6 border-t border-white/15 pt-8 md:grid-cols-2">
+          <div className="space-y-2 text-sm leading-relaxed text-white/80">
+            <p>+234 803 733 7547</p>
+            <p>dasonicandcoy@yahoo.com</p>
+            <p>33, Mission Road, Bonny, Rivers State, Nigeria.</p>
+          </div>
+          <div className="text-sm text-white/70 md:text-right">© {new Date().getFullYear()} Dasonic and Company Nigeria Ltd</div>
         </div>
       </div>
     </footer>
