@@ -10,26 +10,38 @@ const services = [
   {
     name: 'Custom fabrication and installation',
     desc: 'Fabrication, installation, and technical support for durable, high-performance systems.',
+    image: '/profile-page-017.png',
+    alt: 'Custom fabrication and installation services',
   },
   {
     name: 'Construction and project execution',
     desc: 'Planning, design, and execution of construction projects delivered on time and to specification.',
+    image: '/profile-page-018.png',
+    alt: 'Construction and project execution services',
   },
   {
     name: 'Structural integrity and modeling',
     desc: 'Design, analysis, modeling, and advisory services to ensure safe, efficient infrastructure.',
+    image: '/profile-page-019.png',
+    alt: 'Structural integrity and modeling services',
   },
   {
     name: 'Environmental services',
     desc: 'Impact assessments, remediation, monitoring, and compliance-focused reporting.',
+    image: '/profile-page-020.png',
+    alt: 'Environmental services and compliance',
   },
   {
     name: 'Procurement and logistics',
     desc: 'Reliable sourcing and logistics coordination to keep complex projects running smoothly.',
+    image: '/profile-page-021.png',
+    alt: 'Procurement and logistics services',
   },
   {
     name: 'Facility management',
     desc: 'Operational oversight and maintenance services designed for long-term asset performance.',
+    image: '/profile-page-022.png',
+    alt: 'Facility management services',
   },
 ];
 
@@ -38,7 +50,7 @@ export default function ServicesPage() {
     <>
       <section className="relative h-80 overflow-hidden md:h-96">
         <Image
-          src="/profile-page-016.png"
+          src="/services-hero.jpg"
           alt="Services"
           className="h-full w-full object-cover"
           width={1920}
@@ -60,11 +72,23 @@ export default function ServicesPage() {
       >
         <div className="grid gap-6 md:grid-cols-3">
           {services.map((s) => (
-            <div key={s.name} className="group rounded-2xl border border-[color:var(--line)] bg-white p-8 shadow-sm transition hover:shadow-xl hover:border-[color:var(--sea)]">
-              <div className="accent-bar h-1.5 w-12 rounded-full mb-6" />
-              <p className="text-lg font-bold">{s.name}</p>
-              <p className="mt-4 text-base text-[color:var(--muted)] leading-relaxed">{s.desc}</p>
-            </div>
+            <article key={s.name} className="group overflow-hidden rounded-2xl border border-[color:var(--line)] bg-white shadow-sm transition hover:shadow-xl hover:border-[color:var(--sea)]">
+              <div className="relative h-44 overflow-hidden">
+                <Image
+                  src={s.image}
+                  alt={s.alt}
+                  width={900}
+                  height={540}
+                  unoptimized
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-8">
+                <div className="accent-bar h-1.5 w-12 rounded-full mb-6" />
+                <p className="text-lg font-bold">{s.name}</p>
+                <p className="mt-4 text-base text-[color:var(--muted)] leading-relaxed">{s.desc}</p>
+              </div>
+            </article>
           ))}
         </div>
 
@@ -77,7 +101,7 @@ export default function ServicesPage() {
               teams combine local expertise with global best practices to deliver reliable results.
             </p>
           </div>
-          <div className="rounded-2xl bg-gradient-to-br from-[color:var(--dark-blue)] to-[color:var(--navy)] p-8 text-white shadow-xl">
+          <div className="rounded-2xl bg-gradient-to-br from-[#ff3131] to-[#b91c1c] p-8 text-white shadow-xl">
             <div className="bg-white/20 h-1.5 w-16 rounded-full mb-6" />
             <p className="text-xl font-bold">Ready to scope a project?</p>
             <p className="mt-4 text-base text-white/90 leading-relaxed">
@@ -86,7 +110,7 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="mt-6 inline-block rounded-full bg-white px-8 py-3 text-base font-semibold text-[color:var(--dark-blue)] no-underline transition hover:bg-white/90"
+              className="mt-6 inline-block rounded-full bg-white px-8 py-3 text-base font-semibold text-[#b91c1c] no-underline transition hover:bg-white/90"
             >
               Contact the team
             </Link>

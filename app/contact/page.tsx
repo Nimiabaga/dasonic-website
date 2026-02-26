@@ -2,7 +2,7 @@ import { PageShell } from '@/components/page-shell';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Contact',
+  title: 'Contact Us',
 };
 
 export default function ContactPage() {
@@ -21,84 +21,73 @@ export default function ContactPage() {
         </div>
       </section>
       <PageShell
-        title="Get in touch"
-        subtitle="Partner with Nigeria's leading engineering and construction experts."
+        title="Contact our team"
+        subtitle="Connect with Dasonic for project enquiries, technical consultations, and partnership discussions."
       >
-      <div className="grid gap-8 md:grid-cols-2">
-        <div className="rounded-2xl border border-[color:var(--line)] bg-white p-8 shadow-sm">
-          <div className="accent-bar h-1.5 w-16 rounded-full mb-6" />
-          <p className="text-xl font-bold mb-6">Company details</p>
-          <dl className="space-y-4 text-base text-[color:var(--muted)]">
-            <div className="flex items-start justify-between gap-4">
-              <dt className="font-semibold text-[color:var(--ink)]">Email</dt>
-              <dd className="text-right">dasonicandcoy@yahoo.com</dd>
-            </div>
-            <div className="flex items-start justify-between gap-4">
-              <dt className="font-semibold text-[color:var(--ink)]">Phone</dt>
-              <dd className="text-right">+234 803 733 7547</dd>
-            </div>
-            <div className="flex items-start justify-between gap-4">
-              <dt className="font-semibold text-[color:var(--ink)]">Address</dt>
-              <dd className="text-right">33, Mission Road, Bonny, Rivers State, Nigeria.</dd>
-            </div>
-            <div className="flex items-start justify-between gap-4">
-              <dt className="font-semibold text-[color:var(--ink)]">Website</dt>
-              <dd className="text-right">www.dasonicandcompany.com</dd>
-            </div>
-          </dl>
-
-          <div className="mt-8 rounded-xl bg-gradient-to-br from-[color:var(--sea)] to-[color:var(--accent-blue)] p-6 text-white">
-            <p className="text-xs font-bold uppercase tracking-[0.25em]">Quick action</p>
-            <p className="mt-3 text-sm text-white/90 leading-relaxed">
-              Send a project enquiry and our team will respond with next steps and timelines.
-            </p>
-            <a
-              className="mt-5 inline-block rounded-full bg-white px-6 py-3 text-sm font-semibold text-[color:var(--dark-blue)] no-underline transition hover:bg-white/90"
-              href="mailto:dasonicandcoy@yahoo.com?subject=Project%20Enquiry"
-            >
-              Email Enquiry
-            </a>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
+            <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Email</p>
+            <p className="mt-2 text-sm font-semibold text-[color:var(--ink)] break-all">dasonicandcoy@yahoo.com</p>
+          </div>
+          <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
+            <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Phone</p>
+            <p className="mt-2 text-sm font-semibold text-[color:var(--ink)]">+234 803 733 7547</p>
+          </div>
+          <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
+            <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Location</p>
+            <p className="mt-2 text-sm font-semibold text-[color:var(--ink)]">Bonny, Rivers State, Nigeria</p>
+          </div>
+          <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
+            <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Website</p>
+            <p className="mt-2 text-sm font-semibold text-[color:var(--ink)]">www.dasonicandcompany.com</p>
           </div>
         </div>
 
-        <div className="rounded-2xl border border-[color:var(--line)] bg-white p-8 shadow-sm">
-          <div className="accent-bar h-1.5 w-16 rounded-full mb-6" />
-          <p className="text-xl font-bold">Working with Dasonic</p>
-          <p className="mt-4 text-base text-[color:var(--muted)] leading-relaxed">
-            We support infrastructure and engineering projects across Nigeria and beyond. Share your scope, and we will
-            provide a tailored approach covering safety planning, timelines, and procurement strategy.
-          </p>
-          <div className="mt-8 space-y-4 text-base text-[color:var(--muted)]">
-            <p>
-              <strong className="text-[color:var(--ink)] font-semibold">Consultation:</strong> Technical assessment and scope review.
+        <div className="mt-8 grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+          <section className="rounded-2xl border border-[color:var(--line)] bg-white p-8 shadow-sm">
+            <div className="accent-bar h-1.5 w-16 rounded-full mb-6" />
+            <h2 className="text-2xl font-bold text-[color:var(--ink)]">Project Enquiries</h2>
+            <p className="mt-4 text-base text-[color:var(--muted)] leading-relaxed">
+              Share your project scope, timeline, and location. Our team will review your requirements and respond with
+              a clear next-step plan aligned to your operational priorities.
             </p>
-            <p>
-              <strong className="text-[color:var(--ink)] font-semibold">Execution:</strong> Experienced teams with quality control and
-              compliance.
-            </p>
-            <p>
-              <strong className="text-[color:var(--ink)] font-semibold">Support:</strong> Ongoing reporting, monitoring, and handover.
-            </p>
-          </div>
-          <div className="mt-8 flex flex-col gap-4">
-            <a
-              className="rounded-full border-2 border-[color:var(--sea)] px-6 py-3 text-center text-base font-semibold text-[color:var(--sea)] no-underline transition hover:bg-[color:var(--sea)] hover:text-white"
-              href="tel:+2348037337547"
-            >
-              Call +234 803 733 7547
-            </a>
-            <a
-              className="rounded-full border-2 border-[color:var(--line)] px-6 py-3 text-center text-base font-semibold text-[color:var(--ink)] no-underline transition hover:bg-[color:var(--cloud)]"
-              href="https://www.dasonicandcompany.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Visit Company Website
-            </a>
-          </div>
+            <div className="mt-6 rounded-xl border border-[color:var(--line)] bg-[color:var(--cloud)] p-5">
+              <p className="text-sm font-semibold text-[color:var(--ink)]">What to include in your enquiry:</p>
+              <ul className="mt-3 space-y-2 text-sm text-[color:var(--muted)]">
+                <li>• Project type and service required</li>
+                <li>• Preferred timeline and site location</li>
+                <li>• Any compliance, safety, or technical constraints</li>
+              </ul>
+            </div>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                className="rounded-full bg-[color:var(--sea)] px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-[color:var(--accent-blue)]"
+                href="mailto:dasonicandcoy@yahoo.com?subject=Project%20Enquiry"
+              >
+                Send Email Enquiry
+              </a>
+              <a
+                className="rounded-full border-2 border-[color:var(--sea)] px-6 py-3 text-sm font-semibold text-[color:var(--sea)] no-underline transition hover:bg-[color:var(--sea)] hover:text-white"
+                href="tel:+2348037337547"
+              >
+                Call +234 803 733 7547
+              </a>
+            </div>
+          </section>
+
+          <section className="rounded-2xl bg-gradient-to-br from-[color:var(--dark-blue)] to-[color:var(--navy)] p-8 text-white shadow-xl">
+            <div className="bg-white/20 h-1.5 w-16 rounded-full mb-6" />
+            <h2 className="text-2xl font-bold">Office Information</h2>
+            <p className="mt-5 text-sm uppercase tracking-[0.2em] text-white/70">Address</p>
+            <p className="mt-2 text-base text-white/95 leading-relaxed">33, Mission Road, Bonny, Rivers State, Nigeria.</p>
+
+            <p className="mt-6 text-sm uppercase tracking-[0.2em] text-white/70">Business Contact</p>
+            <p className="mt-2 text-base text-white/95">dasonicandcoy@yahoo.com</p>
+            <p className="mt-1 text-base text-white/95">+234 803 733 7547</p>
+
+          </section>
         </div>
-      </div>
-    </PageShell>
+      </PageShell>
     </>
   );
 }

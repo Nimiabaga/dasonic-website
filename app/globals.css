@@ -101,3 +101,37 @@ a {
 .animate-float-soft {
   animation: float-soft 8s ease-in-out infinite;
 }
+
+@keyframes clients-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.clients-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.clients-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 2.5rem;
+  animation: clients-slide 42s linear infinite;
+}
+
+.clients-item {
+  display: flex;
+  height: 5rem;
+  min-width: 11rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-slider:hover .clients-track {
+  animation-play-state: paused;
+}

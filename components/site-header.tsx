@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const nav = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
+  { href: '/about', label: 'About Us' },
   { href: '/services', label: 'Services' },
   { href: '/projects', label: 'Projects' },
   { href: '/contact', label: 'Contact' },
@@ -16,9 +16,9 @@ export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <>
-      <div className="h-2 bg-[#ff3131]"></div>
-      <header className="sticky top-0 z-50 border-b border-[color:var(--line)] bg-white/95 backdrop-blur-md shadow-sm">
+    <header className="fixed inset-x-0 top-0 z-50">
+      <div className="h-2 bg-[#ff3131]" />
+      <div className="border-b border-[color:var(--line)] bg-white/95 backdrop-blur-md shadow-sm">
       <div className="container-padded flex h-16 md:h-20 lg:h-24 items-center justify-between">
         <Link href="/" className="no-underline shrink-0">
           <div className="flex flex-col items-center min-w-max">
@@ -91,7 +91,7 @@ export function SiteHeader() {
           </nav>
         </div>
       )}
+      </div>
     </header>
-    </>
   );
 }

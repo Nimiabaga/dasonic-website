@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+const HERO_IMAGE_VERSION = '20260226';
+
 const slides = [
   {
     image: '/hero-1.jpg',
@@ -55,9 +57,10 @@ export function HeroCarousel() {
           }`}
         >
           <Image
-            src={slide.image}
+            src={`${slide.image}?v=${HERO_IMAGE_VERSION}`}
             alt={slide.title}
             fill
+            unoptimized
             className="object-cover"
             priority={index === 0}
           />

@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body>
         <SiteHeader />
-        <main className="min-h-[calc(100vh-160px)]">{children}</main>
+        <main className="min-h-[calc(100vh-160px)] pt-[72px] md:pt-[88px] lg:pt-[104px]">{children}</main>
         <SiteFooter />
       </body>
     </html>
