@@ -20,6 +20,26 @@ npm run dev
 
 Then open `http://localhost:3000`.
 
+## Newsletter (Mailchimp)
+
+The footer newsletter form posts to `/api/newsletter`.
+
+Set these environment variables in `.env.local`:
+
+```bash
+MAILCHIMP_API_KEY=your_mailchimp_api_key
+MAILCHIMP_AUDIENCE_ID=your_mailchimp_audience_id
+# Optional if API key suffix already includes it (e.g. us21)
+MAILCHIMP_SERVER_PREFIX=us21
+```
+
+How to get values:
+- `MAILCHIMP_API_KEY`: Mailchimp account → Profile → Extras → API keys.
+- `MAILCHIMP_AUDIENCE_ID`: Audience → Settings → Audience name and defaults.
+- `MAILCHIMP_SERVER_PREFIX`: Data center prefix from your API key suffix (example: `us21`).
+
+If Mailchimp vars are not set, the endpoint falls back to optional `NEWSLETTER_WEBHOOK_URL`.
+
 ## Create the git repo (local)
 
 ```bash
