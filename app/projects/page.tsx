@@ -86,8 +86,8 @@ export default function ProjectsPage() {
       >
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((p) => (
-          <article key={p.title} className="group overflow-hidden rounded-2xl border border-[color:var(--line)] bg-white shadow-sm transition hover:shadow-xl">
-            <div className="relative h-52 overflow-hidden">
+          <article key={p.title} className="group overflow-hidden rounded-2xl border border-[color:var(--line)] bg-white shadow-sm transition hover:shadow-xl md:flex md:items-start md:gap-5 md:p-6">
+            <div className="relative h-52 overflow-hidden md:h-24 md:w-24 md:shrink-0 md:rounded-xl md:border md:border-[color:var(--line)] md:bg-[color:var(--surface)]">
               <Image
                 src={p.image}
                 alt={p.alt}
@@ -96,7 +96,7 @@ export default function ProjectsPage() {
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
             </div>
-            <div className="p-8">
+            <div className="p-8 md:min-w-0 md:flex-1 md:p-0">
             <div className="flex flex-col gap-3">
               <h3 className="text-xl font-bold leading-snug">{p.title}</h3>
               <span className="text-xs uppercase tracking-[0.25em] text-[color:var(--sea)] font-semibold">{p.meta}</span>
