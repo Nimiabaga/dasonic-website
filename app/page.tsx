@@ -84,6 +84,7 @@ const clients = [
   { src: '/client-04.png', alt: 'Dasonic client logo 4' },
   { src: '/client-05.png', alt: 'Dasonic client logo 5' },
   { src: '/client-06.png', alt: 'Dasonic client logo 6' },
+  { src: '/client-07.png', alt: 'NPDC client logo' },
 ];
 
 const compliance = [

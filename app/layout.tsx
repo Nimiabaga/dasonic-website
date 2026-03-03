@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Manrope, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { SiteFooter } from '@/components/site-footer';
@@ -23,6 +23,19 @@ export const metadata: Metadata = {
   },
   description:
     'Engineering, infrastructure management, procurement, and technical services across Nigeria.',
+  applicationName: 'Dasonic and Company',
+  manifest: '/manifest.webmanifest',
+  icons: {
+    icon: [
+      { url: '/logo.png', type: 'image/png', sizes: 'any' },
+    ],
+    apple: [{ url: '/logo.png', type: 'image/png' }],
+    shortcut: ['/logo.png'],
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#0b223f',
 };
 
 export default function RootLayout({

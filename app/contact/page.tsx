@@ -27,7 +27,7 @@ export default function ContactPage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Email</p>
-            <p className="mt-2 text-sm font-semibold text-[color:var(--ink)] break-all">dasonicandcoy@yahoo.com</p>
+            <p className="mt-2 text-sm font-semibold text-[color:var(--ink)] break-all">info@dasonicandcompany.com</p>
           </div>
           <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Phone</p>
@@ -35,7 +35,7 @@ export default function ContactPage() {
           </div>
           <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Location</p>
-            <p className="mt-2 text-sm font-semibold text-[color:var(--ink)]">Bonny, Rivers State, Nigeria</p>
+            <p className="mt-2 text-sm font-semibold text-[color:var(--ink)]">Bonny &amp; Port Harcourt, Rivers State, Nigeria</p>
           </div>
           <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Website</p>
@@ -62,7 +62,7 @@ export default function ContactPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 className="rounded-full bg-[color:var(--sea)] px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-[color:var(--accent-blue)]"
-                href="mailto:dasonicandcoy@yahoo.com?subject=Project%20Enquiry"
+                href="mailto:info@dasonicandcompany.com?subject=Project%20Enquiry"
               >
                 Send Email Enquiry
               </a>
@@ -80,9 +80,10 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold">Office Information</h2>
             <p className="mt-5 text-sm uppercase tracking-[0.2em] text-white/70">Address</p>
             <p className="mt-2 text-base text-white/95 leading-relaxed">33, Mission Road, Bonny, Rivers State, Nigeria.</p>
+            <p className="mt-2 text-base text-white/95 leading-relaxed">No. 67 Tombia Extension Road, GRA Phase II, Port Harcourt.</p>
 
             <p className="mt-6 text-sm uppercase tracking-[0.2em] text-white/70">Business Contact</p>
-            <p className="mt-2 text-base text-white/95">dasonicandcoy@yahoo.com</p>
+            <p className="mt-2 text-base text-white/95">info@dasonicandcompany.com</p>
             <p className="mt-1 text-base text-white/95">+234 803 733 7547</p>
 
           </section>
