@@ -115,6 +115,7 @@ export function SiteFooter() {
           <div className="space-y-2 text-sm leading-relaxed text-white/80">
             <p>+234 803 733 7547</p>
             <p>info@dasonicandcompany.com</p>
+            <p>dasonicandcoy@yahoo.com</p>
             <p>33, Mission Road, Bonny, Rivers State, Nigeria.</p>
             <p>No. 67 Tombia Extension Road, GRA Phase II, Port Harcourt.</p>
           </div>

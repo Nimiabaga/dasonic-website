@@ -28,6 +28,7 @@ export default function ContactPage() {
           <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Email</p>
             <p className="mt-2 text-sm font-semibold text-[color:var(--ink)] break-all">info@dasonicandcompany.com</p>
+            <p className="mt-1 text-sm font-semibold text-[color:var(--ink)] break-all">dasonicandcoy@yahoo.com</p>
           </div>
           <div className="rounded-xl border border-[color:var(--line)] bg-white p-5 shadow-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--sea)] font-semibold">Phone</p>
@@ -62,7 +63,7 @@ export default function ContactPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 className="rounded-full bg-[color:var(--sea)] px-6 py-3 text-sm font-semibold text-white no-underline transition hover:bg-[color:var(--accent-blue)]"
-                href="mailto:info@dasonicandcompany.com?subject=Project%20Enquiry"
+                href="mailto:info@dasonicandcompany.com?cc=dasonicandcoy@yahoo.com&subject=Project%20Enquiry"
               >
                 Send Email Enquiry
               </a>
@@ -84,6 +85,7 @@ export default function ContactPage() {
 
             <p className="mt-6 text-sm uppercase tracking-[0.2em] text-white/70">Business Contact</p>
             <p className="mt-2 text-base text-white/95">info@dasonicandcompany.com</p>
+            <p className="mt-1 text-base text-white/95">dasonicandcoy@yahoo.com</p>
             <p className="mt-1 text-base text-white/95">+234 803 733 7547</p>
 
           </section>
