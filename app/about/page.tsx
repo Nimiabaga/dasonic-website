@@ -192,7 +192,14 @@ export default function AboutPage() {
               <p className="mt-4 max-w-3xl mx-auto text-base md:text-lg text-[color:var(--ink)]">
                 Contact us or download our company profile to discover how we can add value to your operations.
               </p>
-              <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <a
+                  href="/dasonic-company-profile.pdf"
+                  download
+                  className="inline-flex h-14 items-center justify-center rounded-full bg-[color:var(--navy)] px-8 text-sm font-semibold uppercase tracking-[0.08em] text-white no-underline transition hover:bg-[color:var(--sea)]"
+                >
+                  Click Here to Download Our Company Profile
+                </a>
                 <Link
                   href="/contact"
                   className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[color:var(--navy)] text-white text-xl no-underline transition hover:bg-[color:var(--sea)]"
